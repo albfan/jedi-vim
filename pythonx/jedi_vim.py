@@ -340,7 +340,7 @@ def goto(mode="goto"):
                                     repr(PythonToVimStr(old_wildignore)))
             vim.current.window.cursor = d.line, d.column
     else:
-        show_goto_multi_results()
+        show_goto_multi_results(definitions)
     return definitions
 
 
